@@ -4,12 +4,8 @@
   "type": "module",
   "main": "index.ts",
   "scripts": {
-    "start": "bun run start.ts",
-    "start:prod": "bun run start.ts",
-    "start:services": "bun run index.ts",
-    "start:gateway": "bun run gateway.ts",
+    "start": "bun run index.ts",
     "dev": "bun --watch run index.ts",
-    "dev:gateway": "bun --watch run gateway.ts",
     "test": "bun test --timeout 120000",
     "test:unit": "bun test --timeout 120000 --testNamePattern='Unit'",
     "test:integration": "bun test --timeout 120000 --testNamePattern='Integration'",
