@@ -17,4 +17,4 @@ COPY . .
 EXPOSE 3001 3002
 
 # Start the application
-CMD ["bun", "run", "index.ts"]
+CMD ["bun", "run", "start"]
