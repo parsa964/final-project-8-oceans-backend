@@ -14,7 +14,7 @@ RUN bun install --frozen-lockfile
 COPY . .
 
 # Expose both service ports
-EXPOSE 3001 3002
+EXPOSE 3000 3001 3002
 
 # Start the application
 CMD ["bun", "run", "start"]
