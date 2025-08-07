@@ -15,7 +15,7 @@ export class OpenAIHandler extends BaseHandler {
     constructor() {
         super({
             name: 'openai-service',
-            port: parseInt(process.env.OPENAI_SERVICE_PORT || '3002'),
+            port: parseInt(process.env.OPENAI_SERVICE_PORT || '4002'),
             version: 'v1',
             basePath: 'ai'
         });

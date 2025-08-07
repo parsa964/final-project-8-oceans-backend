@@ -1,7 +1,7 @@
 import { serve } from "bun";
 
-const JOB_SERVICE_PORT = process.env.JOB_SERVICE_PORT || 3001;
-const OPENAI_SERVICE_PORT = process.env.OPENAI_SERVICE_PORT || 3002;
+const JOB_SERVICE_PORT = process.env.JOB_SERVICE_PORT || 4001;
+const OPENAI_SERVICE_PORT = process.env.OPENAI_SERVICE_PORT || 4002;
 const GATEWAY_PORT = process.env.PORT || 3000; // Railway sets PORT env var
 
 console.log(`Starting API Gateway on port ${GATEWAY_PORT}`);

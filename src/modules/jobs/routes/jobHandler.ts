@@ -10,7 +10,7 @@ export class JobHandler extends BaseHandler {
     constructor() {
         super({
             name: 'job-service',
-            port: parseInt(process.env.JOB_SERVICE_PORT || '3001'),
+            port: parseInt(process.env.JOB_SERVICE_PORT || '4001'),
             version: 'v1',
             basePath: 'jobs'
         });
