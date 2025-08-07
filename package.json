@@ -1,0 +1,35 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.ts",
+  "scripts": {
+    "start": "bun run index.ts",
+    "dev": "bun --watch run index.ts",
+    "test": "bun test --timeout 120000",
+    "test:unit": "bun test --timeout 120000 --testNamePattern='Unit'",
+    "test:integration": "bun test --timeout 120000 --testNamePattern='Integration'",
+    "test:coverage": "bun test --timeout 120000 --coverage",
+    "test:all": "bun run src/test/runTests.ts",
+    "start:jobs": "ENABLE_OPENAI_SERVICE=false bun run index.ts",
+    "start:openai": "ENABLE_JOB_SERVICE=false bun run index.ts",
+    "dev:jobs": "ENABLE_OPENAI_SERVICE=false bun --watch run index.ts",
+    "dev:openai": "ENABLE_JOB_SERVICE=false bun --watch run index.ts"
+  },
+  "dependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.3",
+    "@types/multer": "^1.4.11",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "multer": "^1.4.5-lts.1",
+    "openai": "^5.6.0",
+    "axios": "^1.6.7",
+    "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/node-fetch": "^2.6.11"
+  }
+} 
